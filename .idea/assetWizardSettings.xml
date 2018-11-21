@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_menu_fleche" />
-                            <entry key="sourceFile" value="C:\Users\HB" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic__recycler_lollipop" />
+                            <entry key="sourceFile" value="C:\Users\HB\Downloads\lollipop.svg" />
                           </map>
                         </option>
                       </PersistentState>

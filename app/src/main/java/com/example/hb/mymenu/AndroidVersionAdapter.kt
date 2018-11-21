@@ -13,7 +13,8 @@ class AndroidVersionAdapter(val items: Array<AndroidVersion>) : RecyclerView.Ada
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bindAndroidVersion(androidVersion: AndroidVersion) {
             with(androidVersion) {
-                itemView.androidVersionText.text = "$name" // TODO Macha redundant string template
+                itemView.androidVersionText.text = name
+                itemView.androidVersionImage.setImageResource(imageId)
             }
         }
     }

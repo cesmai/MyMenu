@@ -13,8 +13,8 @@ class RecyclerActivity : AppCompatActivity() {
 
         // Initialize data for RecyclerView
         val androidVersionArray = arrayOf(
-            AndroidVersion("Banana"),
-            AndroidVersion("Lollipop")
+            AndroidVersion("Banana", R.drawable.ic_recycler_banana),
+            AndroidVersion("Lollipop", R.drawable.ic_recycler_lollipop)
         )
 
         // Configure RecyclerView with a layout manager
