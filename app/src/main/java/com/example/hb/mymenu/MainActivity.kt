@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         // Set Fragment
         setFragment(OneFragment())
+
     }
 
     override fun onBackPressed() {
