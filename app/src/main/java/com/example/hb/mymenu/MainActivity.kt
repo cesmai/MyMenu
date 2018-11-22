@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.preference.PreferenceManager
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Set Fragment
         setFragment(OneFragment())
 
+        // Set default settings
+        PreferenceManager.setDefaultValues(this, R.xml.settings, false)
+
     }
 
     override fun onBackPressed() {
@@ -60,6 +64,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.action_settings -> {
                 toast("select option settings")
+                setFragment(SettingsFragment())
                 return true
             }
             R.id.action_history -> {
@@ -84,7 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 toast("select navigation slideshow")
             }
             R.id.nav_manage -> {
-                toast("select navigation manage")
+                toast("select navigation nav_manage")
             }
             R.id.nav_share -> {
                 toast("select navigation share")

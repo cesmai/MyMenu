@@ -9,4 +9,6 @@
     <string name="action_history">History</string>
 
     <string name="hello_blank_fragment">Hello fragment one</string>
+    <string name="pref_sound">prefSound</string>
+    <string name="label_sound">Son</string>
 </resources>
